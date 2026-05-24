@@ -68,6 +68,11 @@ export default defineConfig((config) => {
         },
       },
     },
+
+    // ⭐ REQUIRED FOR RAILWAY — FIXES "Blocked request" ERROR
+    server: {
+      allowedHosts: ['stackblitz-boltdiy-ai-production.up.railway.app'],
+    },
   };
 });
 
@@ -96,3 +101,4 @@ function chrome129IssuePlugin() {
     },
   };
 }
+
