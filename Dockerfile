@@ -57,5 +57,5 @@ RUN mkdir -p /root/.config/.wrangler && \
 
 RUN pnpm run build
 
-RUN npm install -g http-server
-CMD [ "http-server", "build/client", "-p", "5173", "-a", "0.0.0.0" ]
+RUN npm install express
+CMD [ "node", "-e", "const express = require('express'); const app = express(); app.use(express.static('build/client')); app.listen(5173, '0.0.0.0', () => console.log('Server running on 0.0.0.0:5173'));" ]
