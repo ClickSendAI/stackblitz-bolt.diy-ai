@@ -57,5 +57,5 @@ RUN mkdir -p /root/.config/.wrangler && \
 
 RUN pnpm run build
 
-RUN npm install -g serve
-CMD [ "serve", "-s", "build/client", "-l", "5173", "-H", "0.0.0.0" ]
+RUN npm install -g http-server
+CMD [ "http-server", "build/client", "-p", "5173", "-a", "0.0.0.0" ]
