@@ -57,4 +57,5 @@ RUN mkdir -p /root/.config/.wrangler && \
 
 RUN pnpm run build
 
-CMD [ "pnpm", "run", "dockerstart"]
+RUN npm install -g serve
+CMD [ "serve", "-s", "build/client", "-l", "5173" ]
