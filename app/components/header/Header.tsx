@@ -19,8 +19,8 @@ export function Header() {
         <div className="i-ph:sidebar-simple-duotone text-xl" />
         <a href="/" className="text-2xl font-semibold text-accent flex items-center">
           {/* <span className="i-bolt:logo-text?mask w-[46px] inline-block" /> */}
-          <img src="/logo-light-styled.png" alt="logo" className="w-[90px] inline-block dark:hidden" />
-          <img src="/logo-dark-styled.png" alt="logo" className="w-[90px] inline-block hidden dark:block" />
+          <img src="https://raw.githubusercontent.com/ClickSendAI/stackblitz-bolt.diy-ai/ad352b40be049e0570d0bd948d8be48dc0c18c16/public/CreAIlity-app-logo.png" alt="logo" className="w-[90px] inline-block dark:hidden" />
+          <img src="https://raw.githubusercontent.com/ClickSendAI/stackblitz-bolt.diy-ai/ad352b40be049e0570d0bd948d8be48dc0c18c16/public/CreAIlity-app-logo.png" alt="logo" className="w-[90px] inline-block hidden dark:block" />
         </a>
       </div>
       {chat.started && ( // Display ChatDescription and HeaderActionButtons only when the chat has started.
